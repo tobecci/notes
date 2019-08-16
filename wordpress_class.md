@@ -32,3 +32,19 @@ or <https://wpastra.com>
 - add the themes
 - install the plugins
 - import the demo content
+
+#### Plugins to note
+
+- all in one wp migration
+- contact form 7
+- jetpack: for keeping track of website performance
+- wooCommerce: for adding eccomerce functions to your website
+- Paystack requires an API secret key and 
+
+N.B: a plugin that depends on another plugin in order to function is called an add-on
+
+#### Difference between wordpress theme and wordpress template
+
+- wordpress theme:
+
+- wordpress templates:
