@@ -2,7 +2,7 @@
 
 ## codeigniter font awesome problem solution
 
-```
+```php
 $root=(isset($_SERVER['HTTPS']) ? "https://" : "http://").$_SERVER['HTTP_HOST'];
 $root.= str_replace(basename($_SERVER['SCRIPT_NAME']), '', $_SERVER['SCRIPT_NAME']);
 $config['base_url'] = $root;
@@ -10,7 +10,7 @@ $config['base_url'] = $root;
 
 ## Heroku
 
-```
+```txt
 heroku login --interactive
 heroku apps:create my-site
 git push heroku master
@@ -18,7 +18,7 @@ git push heroku master
 
 ## lxde ctrl not working, the workaround
 
-```
+```txt
 A temporary workaround may be opening the ~/.config/openbox/lxde-rc.xml config file in a text editor, finding the section and then manually adding the "C-" to the field like this:
 <keybind key='C-A-Up'>
 <keybind key='C-F1'>
@@ -27,7 +27,7 @@ A temporary workaround may be opening the ~/.config/openbox/lxde-rc.xml config f
 
 ## index.php removal not working solution
 
-```
+```txt
 open /etc/apache2/sites-available/000-default.conf and replace the <Directory > tag with the code below
 
 <Directory "/var/www/html">
@@ -47,19 +47,9 @@ open /etc/apache2/sites-available/000-default.conf and replace the <Directory > 
 
 <!-- https://mygradr.web.app/RLSn4T6mJmQBORq7vnOt/!#intro -->
 
-## money that chiboy gave to me 
-
-```
-- monday: 2500
-- tuesday: 2500
-- wednesday: 
-- thursday:
-- friday: 
-```
-
 ## allowing copy and paste in gradr
 
-```
+```javascript
 var allowPaste = function(e){
       e.stopImmediatePropagation();
       return true;
@@ -69,9 +59,9 @@ document.addEventListener('paste',allowPaste,true);
 
 ## how to use vue router
 
-```
-yarn add vue-router
-in the main.js file type below code
+```javascript
+// yarn add vue-router
+// in the main.js file type below code
 import VueRouter from 'vue-router'
 import Routes from './routes.js';
 Vue.use(VueRouter);
@@ -84,20 +74,20 @@ new Vue({
   router: router
 }).$mount('#app')
 
-contents of the routes.js file are
+// contents of the routes.js file are
 import showBlogs from './components/showBlogs.vue';
 import listBlogs from './components/listBlogs.vue';
 export default [
     {path:'/',component:showBlogs},
     {path:'/list',component:listBlogs},
 ]
-we are exporting an array of objects
+// we are exporting an array of objects
 ```
 
 ## using mixin in vue
 
-```
-an example
+``` javascript
+// an example
 import searchMixin from '../mixins/searchMixin.js';
 mixins: [searchMixin],
 inside searchMixin.js
@@ -114,7 +104,7 @@ export default {
 
 ## using filters in vue
 
-```
+```javascript
 filters: {
     "to-uppercase": (value) => {
       return value.toUpperCase();
@@ -126,8 +116,7 @@ usage
 
 ## syscomptech mailchimp credentials
 
-```
-
+```txt
 username: syscomptech_mailer
 pass: Syscomptech`1234567890
 ```
