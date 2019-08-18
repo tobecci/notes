@@ -1,50 +1,74 @@
 # wordpress class
 
-website to purchase templates: <https://themeforest.net>
-or <https://wpastra.com>
+website to purchase templates [themeforest](https://themeforest.net)
+or [wpastra](https://wpastra.com)
+
+---
 
 ## Tips from Mr innocent
 
-- when looking for themes, check for the themes with high reviews
-- you can preview themes before buying them 
+1. when looking for themes, check for the themes with high reviews
+2. you can preview themes before buying them 
+
+---
 
 ## Tips from mr david
 
-- download the theme (its usually in rar format)
-- use winrar or 7zip to extract the template
+1. download the theme (its usually in rar format)
+2. use **winrar** or **7zip** to extract the template
+
+---
 
 ### Assignment
 
-- use astra to get templates
+> use astra to get templates
+
+---
 
 ### Difference between wordpress.org and wordpress.com
 
-- wordpress.com: is a CMS where you create blogs or sites
-- wordpress.org: is an online directory where you 
+* wordpress.com is a CMS where you create blogs or sites
+* wordpress.org is an online directory where you
+
+---
 
 #### types of templates
 
-- parent template : is the main theme (original)
-- child template : is lighter than the parent template (minified)
+Parent template
+: is the main theme (original)
+
+Child template
+: is lighter than the parent template (minified)
+
+---
 
 #### How to install themes
 
-- add the themes
-- install the plugins
-- import the demo content
+* add the themes
+* install the plugins
+* import the demo content
+
+---
 
 #### Plugins to note
 
-- all in one wp migration
-- contact form 7
-- jetpack: for keeping track of website performance
-- wooCommerce: for adding eccomerce functions to your website
-- Paystack requires an API secret key and 
+* all in one wp migration
+* contact form 7
+* jetpack: for keeping track of website performance
+* wooCommerce: for adding eccomerce functions to your website
+* Paystack requires an API secret key and
 
-N.B: a plugin that depends on another plugin in order to function is called an add-on
+> NB a plugin that depends on another plugin in order to function is called an add-on
+
+---
 
 #### Difference between wordpress theme and wordpress template
 
-- wordpress theme:
+* wordpress theme:
+* wordpress templates:
 
-- wordpress templates:
+---
+
+#### Creating a slider in a wordpress site
+
+we do this using revolution slider plugin
