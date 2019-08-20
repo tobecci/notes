@@ -1,10 +1,11 @@
 # My notes on vue.js
 
-## how to use vue router
+## How to use vue router
 
-```javascript
+```js
 // yarn add vue-router
 // in the main.js file type below code
+
 import VueRouter from 'vue-router'
 import Routes from './routes.js';
 Vue.use(VueRouter);
@@ -26,9 +27,21 @@ export default [
     {path:'/list',component:listBlogs},
 ]
 // we are exporting an array of objects
+
+// to link to the components we use
+<router-link to="/">Show Blogs</router-link>
+
+// getting parameters from the url
+data(){
+  return {
+    id: this.$route.params.id    
+  }
+}
+// route is added with
+{path: '/blog/:id', component: singleBlog},
 ```
 
-## using mixin in vue
+## Using mixin in vue
 
 ``` javascript
 // an example
@@ -46,7 +59,7 @@ export default {
 }
 ```
 
-## using filters in vue
+## Using filters in vue
 
 ```javascript
 filters: {
@@ -56,4 +69,41 @@ filters: {
   },
 // usage
  <h3>{{ blog.title | to-uppercase }}</h3>
+```
+
+## Creating directives in vue
+
+```javascript
+directives : {
+  'rainbow': {
+    bind(el, binding, vnode){
+      el.style.color = "#" + Math.random().toString(16).slice(2,8);
+    }
+  }
+},
+```
+
+## plugins i installed
+
+* vue-router
+* vue-resource
+* storybook
+* vuex
+* axios
+* material-icons
+* font awesome 4
+* font awesome 5
+
+## Binding checkboxes in vue
+
+```txt
+we do this by binding all of the input boxes to one array variable
+```
+
+# passing props in vue
+
+after binding data to an attribute we go to the js of the receiving component and  write
+
+```js
+props["prop-name"],
 ```
