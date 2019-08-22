@@ -97,7 +97,8 @@ methods: {
 
 get into the practice of not using mutations directly, instead call them from within an action
 
->passing a second parameter in this.$store.commit('reducePrice','secondParameter'); allows the reducePrice mutation to receive and use that data 
+>passing a second parameter in this.$store.commit('reducePrice', secondParameter); allows the reducePrice mutation to receive and use that data 
+
 ---
 
 ## How to use actions in vuex
@@ -118,6 +119,4 @@ actions are called by using
 this.$store.dispatch('actionName');
 ```
 >the `context` is kinda like the store instance
->this.$store.dispatch('reducePrice','secondParameter'); allows the reducePrice action to receive and use that data 
-
-
+>this.$store.dispatch('reducePrice', secondParameter); allows the reducePrice action to receive and use that data 
