@@ -65,3 +65,8 @@ pass: Syscomptech`1234567890
 ## My Gradr Assessment link
 
 [gradr](https://mygradr.web.app/RLSn4T6mJmQBORq7vnOt/!#intro)
+
+
+## for apache file permission issues run
+
+`sudo chmod -R 775 /var/www`
