@@ -28,7 +28,7 @@ A temporary workaround may be opening the ~/.config/openbox/lxde-rc.xml config f
 ## index.php removal not working solution
 
 ```txt
-open /etc/apache2/sites-available/000-default.conf and replace the <Directory > tag with the code below
+open /etc/apache2/sites-available/000-default.conf and replace the <Directory > tag with the code below. in some cases you add it
 
 <Directory "/var/www/html">
 
@@ -70,3 +70,36 @@ pass: Syscomptech`1234567890
 ## for apache file permission issues run
 
 `sudo chmod -R 775 /var/www`
+
+## fix wordpress ftp issue
+
+* add `define( 'FS_METHOD', 'direct' );` to the wp-config file
+
+## fix wordpress or server not writing to files
+
+* run `chown www-data:www-data  -R wordpress` in terminal
+
+## fix wordpress cant crop image problem
+
+* run `sudo apt install php-gd` in terminal, and restart your apache server or system
+
+## wine 32bit prefix
+`WINEARCH=win32 WINEPREFIX=/home/tobecci/.wine winecfg`
+
+## download free images
+[pixabay](https://pixabay.com)
+
+## how to find overflowing elements on a page
+
+```js
+var docWidth = document.documentElement.offsetWidth;
+
+[].forEach.call(
+  document.querySelectorAll('*'),
+  function(el) {
+    if (el.offsetWidth > docWidth) {
+      console.log(el);
+    }
+  }
+);
+```
