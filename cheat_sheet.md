@@ -55,13 +55,6 @@ var allowPaste = function(e){
 document.addEventListener('paste',allowPaste,true);
 ```
 
-## syscomptech mailchimp credentials
-
-```txt
-username: syscomptech_mailer
-pass: Syscomptech`1234567890
-```
-
 ## My Gradr Assessment link
 
 [gradr](https://mygradr.web.app/RLSn4T6mJmQBORq7vnOt/!#intro)
