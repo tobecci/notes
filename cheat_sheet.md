@@ -96,7 +96,6 @@ var docWidth = document.documentElement.offsetWidth;
   }
 );
 ```
-
 ## aireplay kick algorithm
 * `sudo airmon-ng start wlp12s0`
 * `sudo airodump-ng wlp12s0mon`
@@ -110,5 +109,3 @@ https://github.com/hngi/Team-NEMESIS/pull/22
 
 * `git reflog` to show the list of commits
 * `git reset --hard [hash]` where `[hash]` is the hash of the commit e.g 75fecb3
-
-## 
