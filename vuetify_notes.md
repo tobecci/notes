@@ -26,7 +26,7 @@ is added with
   <p>test</p>
 </v-navigation-drawer>
 ```
-
+* without putting the `absolute prop it wont show up`
 * temporary add an overlay on it, to remove it when other parts of the screen is clicked
 * we add list items using `v-list` they are like `<ul>` tags in html, inside the `v-list` we have the list tiles i.e `v-list-tile` they are like `<li>` tags in html
 
@@ -81,6 +81,9 @@ we do this by using a `route` prop and binding the link to the `to=""` prop
 * we use `v-flex` inside the `v-layout` element to define items inside the layout, it takes breakpoint width props e.g `xs12` (occupy 12 cols of with on extra small screens ), or `md6` etc
 * adding `block` prop to `v-btn` element makes it take up the full width of the flex
 * if we are not taking up all the available space in a `v-layout` we can justify the contents inside it by using the following props `justify-space-around` `justify-space-between` `justify-center`
+
+### for vuetify 2, it has changed 
+we use `class="d-flex flex-row justify-end"` to make an element a flex box, row, and justify to end of the container
 
 ## vuetify divider
 
@@ -253,3 +256,14 @@ db.collection('collection_name').onSnapshot((res) => {
 ### vuetify 2 new toolbar
 
 we now use `v-app-bar` to add toolbar in vuetify
+
+## vuetify 2 activators
+
+* the activator element should be inside a `template` element with `v-slot:activator="{on}"` prop, where on is the name given to the activator element, an example is given below
+* `v-on="on"` is an example of the naming
+
+## Hiding elements at certain breakpoints
+
+* to hide elements on xs screens and up we use `.d-xs-none`
+* to hide on xs only we use `.d-xs-none d-sm-flex`
+

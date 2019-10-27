@@ -21,3 +21,14 @@ public function index(){
 ``` 
 
 ## ROUTES
+
+### Route definitions
+```php
+Route::get('/home','HomeController@index'); // this maps to the index function inside the home controller
+// or we can do
+Route::get('/home',function(){
+	return view('viewName');
+}); 
+// or we can do
+Route::get('/user/{id}','HomeController@user'); //passes the id as a parameter
+```

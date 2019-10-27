@@ -17,3 +17,13 @@ const filteredArray =  arr.filter((item) => {
 });
 // notice we returned a boolean which returns the current element if it passes the test
 ```
+
+## How to redirect to another page
+
+```js
+// Simulate a mouse click:
+window.location.href = "http://www.w3schools.com";
+
+// Simulate an HTTP redirect:
+window.location.replace("http://www.w3schools.com");
+```
