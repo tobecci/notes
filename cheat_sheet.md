@@ -99,7 +99,7 @@ var docWidth = document.documentElement.offsetWidth;
 ## aireplay kick algorithm
 * `sudo airmon-ng start wlp12s0`
 * `sudo airodump-ng wlp12s0mon`
-* use `sudo iwconfig wlp12s0mon channel 1` to make sure `wlp12s0mon` is on channel `1`, that is the same channel as the AP 
+* use `sudo iwconfig wlp12s0mon channel 1` to make sure `wlp12s0mon` is on channel `1`, that is the same channel as the AP
 * `sudo aireplay-ng --deauth 0 -a E0:67:B3:1D:D5:0F wlp12s0mon`
 
 ## hng6 links
@@ -109,3 +109,7 @@ https://github.com/hngi/Team-NEMESIS/pull/22
 
 * `git reflog` to show the list of commits
 * `git reset --hard [hash]` where `[hash]` is the hash of the commit e.g 75fecb3
+
+## fix buffer overrun wine
+
+__GL_ExtensionStringVersion=17700 playonlinux --run CoDMP
