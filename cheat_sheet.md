@@ -112,4 +112,37 @@ https://github.com/hngi/Team-NEMESIS/pull/22
 
 ## fix buffer overrun wine
 
-__GL_ExtensionStringVersion=17700 playonlinux --run CoDMP
+NVIDIA FIX
+
+Wine: Open a terminal and type: __GL_ExtensionStringVersion=17700 wine yourgame.exe (replace "yourgame.exe" with either jasp.exe or jamp.exe)
+
+PlayOnLinux: Select the virtual drive, click on "configure" -> "miscellaneous" (tab) and type in the following "exec command" in the field below: export __GL_ExtensionStringVersion=17700
+
+Launch thegame afterwards.
+
+INTEL FIX
+
+Wine: Open a terminal and type: MESA_EXTENSION_MAX_YEAR=2003 wine yourgame.exe (replace "yourgame.exe" with either jasp.exe or jamp.exe)
+
+PlayOnLinux: Select the virtual drive, click on "configure" -> "miscellaneous" (tab) and type in the following "exec command" in the field below: export MESA_EXTENSION_MAX_YEAR=2003
+
+
+##  adb tricks
+list installed apps
+pm list packages
+
+uninstall a package
+pm uninstall -k --user 0 package-name  
+
+## auto mount modem in linux
+
+`udevadm monitor --kernel --property --subsystem-match=usb` this code will print some output when a usb device is plugged or unplugged
+
+create `/etc/udev/rules.d/5-usbstick-font.rules` and add 
+
+```sh
+ACTION=="add", SUBSYSTEM=="usb", ENV{PRODUCT}=="90c/1000/1100", RUN=="/bin/su username --command='path-to.sh'"
+ACTION=="remove", SUBSYSTEM=="usb", ENV{PRODUCT}=="90c/1000/1100", RUN+="/bin/su username --command='path-to.sh'"
+```
+
+where `90c/1000/1100` is the product id

@@ -1,8 +1,8 @@
-## My notes on node.js
+# My notes on node.js
 
 ## exporting modules
-* we export modules in node js using `module.exports = variable` or `module.exports.export_name = variable` for multiple variables
 
+* we export modules in node js using `module.exports = variable` or `module.exports.export_name = variable` for multiple variables
 
 ## importing from files
 
@@ -41,6 +41,7 @@ console.log("server has started on " + port);
 ```
 
 ## reading a file in node js
+
 ```js
 const fs = require("fs");
 fs.readFileSync("filename.txt", "utf8");
@@ -52,4 +53,15 @@ fs.readFileSync("filename.txt", "utf8");
 * path module
   * path.parser(__filename);
 
+## Semantic versioning
 
+* 1.12.5 - Major version | minor version | patch version
+
+## creating an express application
+
+```js
+const express = require(`express`);
+const app = express();
+// for making the port number dynamic
+// const port = process.env.PORT || 3000;
+```

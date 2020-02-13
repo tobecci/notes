@@ -29,3 +29,8 @@
     * Senegal
     * Central africa republic
     * Zambia
+
+
+
+shortcode
+<div class='row submit_fw'><div class='wgl_col-12'>[text text-759 placeholder "Name *"]</div><div class='wgl_col-12'>[email email-613 placeholder akismet:author_email "Email *"]</div><div class='wgl_col-12'>[number text-739 placeholder "Phone *"]</div><div class='wgl_col-12'>[email email-613 placeholder akismet:author_email "Website *"]</div><div class='wgl_col-12'>[text text-789 placeholder "Company Name *"]</div></div>[submit "GET FREE REPORT"]
