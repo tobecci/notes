@@ -146,3 +146,4 @@ ACTION=="remove", SUBSYSTEM=="usb", ENV{PRODUCT}=="90c/1000/1100", RUN+="/bin/su
 ```
 
 where `90c/1000/1100` is the product id
+
