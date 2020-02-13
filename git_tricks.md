@@ -8,3 +8,6 @@ git checkout <local-branch>
 ## when gitignore or exclude is not working
 
 * `git rm -r --cached .`
+
+## make git never ask for usename and password
+`git config --global credential.helper store`
