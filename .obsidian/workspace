@@ -1,0 +1,95 @@
+{
+  "main": {
+    "id": "a0c0e496a3abc98d",
+    "type": "split",
+    "children": [
+      {
+        "id": "b3662649478873f6",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "cheat_sheet.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5d54bb13b78cdb2b",
+    "type": "split",
+    "children": [
+      {
+        "id": "f34374517b815678",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4ed7ad5af2dc39d2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "e2261dfd15509048",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "61380385e59df88a",
+    "type": "split",
+    "children": [
+      {
+        "id": "f5a149296fe49f7c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "23605418efb61e7a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "cheat_sheet.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "b3662649478873f6",
+  "lastOpenFiles": [
+    "cheat_sheet.md",
+    "idea_book.md",
+    "hng6.md"
+  ]
+}
