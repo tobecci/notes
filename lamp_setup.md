@@ -6,3 +6,7 @@
   `sudo mysql`  
   and run  
   `GRANT ALL ON *.* TO 'tobecci'@'localhost' IDENTIFIED BY 'tobecci' WITH GRANT OPTION;`
+
+### Mysql service cannot start
+
+run `sudo mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql`
