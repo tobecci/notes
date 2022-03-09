@@ -10,3 +10,8 @@
 ### Mysql service cannot start
 
 run `sudo mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql`
+
+
+## resource for changing apache2 directory
+
+https://askubuntu.com/questions/413887/403-forbidden-after-changing-documentroot-directory-apache-2-4-6
