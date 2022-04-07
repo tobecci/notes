@@ -11,3 +11,7 @@ git checkout <local-branch>
 
 ## make git never ask for usename and password
 `git config --global credential.helper store`
+
+## delete file from commit tree
+
+git filter-branch -f --tree-filter 'rm -f /path/to/file' HEAD --all

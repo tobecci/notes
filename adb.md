@@ -13,3 +13,8 @@ adb shell settings put global package_verifier_enable 0
 ```
 adb shell pm uninstall -k --user 0 [package name]
 ```
+
+## packages i have removed(redmi)
+
+com.android.thememanager
+com.google.android.youtube
