@@ -15,3 +15,4 @@
 - [disconnect wifi](https://extensions.gnome.org/extension/904/disconnect-wifi/)
 - [refresh wifi connections](https://extensions.gnome.org/extension/905/refresh-wifi-connections/)
 - [toggle night light](https://extensions.gnome.org/extension/3933/toggle-night-light/)
+- [Clipboard indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/)
