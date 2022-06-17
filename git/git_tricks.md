@@ -5,9 +5,10 @@
 git fetch <remote-repo> <remote-branch>:<local-branch>
 git checkout <local-branch>
 
-## when gitignore or exclude is not working
+## how to remove a file from git
 
-* `git rm -r --cached .`
+* `git rm -r --cached [file name]`
+
 
 ## make git never ask for username and password
 `git config --global credential.helper store`
